@@ -14,7 +14,7 @@ autoClicker.onclick = function() {
     autoClicker.innerHTML = "Auto Clickers Owned: " + autoCount;
         setInterval(() => {
             makeDonuts.click();
-            count++;
+            count ++;
         }, 1000);
     }
 };
