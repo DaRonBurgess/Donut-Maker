@@ -8,20 +8,30 @@
     <title>Donut Maker</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            
-        </nav>
-    </header>
     <main class="main-container">
+        <header class="header">
+            <nav class="nav-bar">
+                <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+            </nav>
+        </header>
         <section class="manuel-donut-click">
-            <p class="donut-count">Donuts: 0</p>
-            <button id="make-donuts">Click to make Donuts</button>
+            <button id="new-game" onclick="reset()">Game Reset</button>
+            <p id="donut-count">Donuts: 0</p>
+            <img id="donut-img" src="donut.png">
+            <br>
+            <button id="make-donuts" onclick="makeDonuts()">Click here to make Donuts!</button>
         </section>
         <section id="auto-donut-click">
-            <button id="auto-clicker">Purchase Automatic Clicker</button>
+            <button id="auto-clicker" class="click" onclick="autoClicker()">Purchase Automatic Clicker for: 10 Donuts</button>
+            <br>
+            <span id="auto-clickers-owned">Auto Clickers Owned</span>
         </section>
     </main>
+    <div id="footer">
+        <footer>
+            &copy; 2023 Da'Ron Burgess. All Rights Reserved
+        </footer>
+    </div>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
