@@ -17,12 +17,15 @@
         <section class="manuel-donut-click">
             <button id="new-game" onclick="reset()">Game Reset</button>
             <p id="donut-count">Donuts: 0</p>
-            <img id="donut-img" src="donut.png">
+            <div id="donut-img" onclick="donutImgClick()">
+                <img src="donut.png">
+            </div>
             <br>
-            <button id="make-donuts" onclick="makeDonuts()">Click here to make Donuts!</button>
+            <span>Click on the giant donut above to start baking!</span>
+            <!-- <button id="make-donuts" onclick="makeDonuts()">Click here to make Donuts!</button> -->
         </section>
         <section id="auto-donut-click">
-            <button id="auto-clicker" class="click" onclick="autoClicker()">Purchase Automatic Clicker for: 10 Donuts</button>
+            <button id="auto-clicker" class="click" onclick="autoClicker()">Purchase Automatic Clicker for: 100 Donuts</button>
             <br>
             <span id="auto-clickers-owned">Auto Clickers Owned</span>
         </section>

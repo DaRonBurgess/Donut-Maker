@@ -1,11 +1,11 @@
 var donuts = 0;
 var autoCount = 0;
-var autoClickerCost = 10;
+var autoClickerCost = 100;
 var intervalId;
 
 buttonDisable()
 
-function makeDonuts() {
+function donutImgClick() {
     donuts ++;
     document.getElementById("donut-count").innerHTML = 'Donuts: ' + donuts;
     buttonDisable();
@@ -14,11 +14,12 @@ function makeDonuts() {
 
 
 function autoClicker() {
+        donuts -= autoClickerCost;
+        // autoClickerCost += 0.1;
         autoCount += 1;
-        donuts -= 10;
         document.getElementById('auto-clickers-owned').innerHTML = 'Auto Clickers Owned: ' + autoCount;
             intervalId = setInterval(() => {
-                makeDonuts();
+                donutImgClick();
             }, 1000);
 }
 
