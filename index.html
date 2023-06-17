@@ -9,11 +9,41 @@
 </head>
 <body>
     <main class="main-container">
-        <header class="header">
-            <nav class="nav-bar">
-                <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
-            </nav>
-        </header>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="drop-button">Company Info</button>
+                    <div class="dropdown-info">
+                        <p id="company-info">Welcome to Fred the Baker Baking Company!
+                            <br>
+                        Fred the Baker Baking Company is a family owned company that was established in 1936. The company was started by Fred Jones when he opened his first bakery in Columbus, Ohio. It started off as a local bakery with not much traffic until one day Fred's life changed forever. On June 5th, 1936 president Franklin D. Roosevelt walked into Fred's bakery and fell in love. The publicity from that presidential visit sent Fred's baking company spirally into success. The company is now owned and operated by Fred's great grandson Fred Jones &#8546; and to this day remains famous for being the bakery that inspired the creation of national donut day.</p>
+                    </div>
+            </div>
+            <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+            <div class="dropdown">
+                <button class="drop-button">Developer Info</button>
+                    <div class="dropdown-info">
+                        <p id="developer-info">Created by: DaRon Burgess
+                            <br>
+                        Hello to all visitors. As stated above, my name is DaRon and this is my donut clicker game. This game is simple yet addicting at the same time. Below is a link to my Professional Portfolio as well as a link to my GitHub account if you are interested in checking out some of my other work.</p>
+                        <br>
+                        <ul>
+                            <div class="github-link">
+                                <a href="https://github.com/DaRonBurgess">GitHub</a>
+                            </div>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+
+        
+        
+        
+        
+        
+        <!-- <nav class="nav-bar">
+            <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+        </nav> -->
         <section class="manuel-donut-click">
             <button id="new-game" onclick="reset()">Game Reset</button>
             <p id="donut-count">Donuts: 0</p>
@@ -22,7 +52,6 @@
             </div>
             <br>
             <span>Click on the giant donut above to start baking!</span>
-            <!-- <button id="make-donuts" onclick="makeDonuts()">Click here to make Donuts!</button> -->
         </section>
         <section id="auto-donut-click">
             <button id="auto-clicker" class="click" onclick="autoClicker()">Purchase Automatic Clicker for: 100 Donuts</button>
@@ -30,11 +59,11 @@
             <span id="auto-clickers-owned">Auto Clickers Owned</span>
         </section>
     </main>
+    <script src="main.js"></script>
     <div id="footer">
         <footer>
             &copy; 2023 Da'Ron Burgess. All Rights Reserved
         </footer>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>
